@@ -1,6 +1,6 @@
 # The Unruining
 Small spare time game on GGJ23
 
-Unruin it!
+Unruin the thing!
 
 (Puhumme myös suomea)
