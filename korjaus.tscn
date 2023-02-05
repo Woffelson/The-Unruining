@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://vrdobbi1skq8"]
+
+[ext_resource type="Script" path="res://korjaus.gd" id="1_xmskv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ti15x"]
+size = Vector2(41, 41)
+
+[node name="korjaus" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_xmskv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ti15x")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
